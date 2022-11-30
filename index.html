@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script await src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.0/iconify.min.js"></script>
+    <script await src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.1/iconify.min.js"></script>
 
     <link rel="stylesheet async" type="text/css" href="/styles/normalize.css">
     <link rel="stylesheet async" type="text/css" href="/styles/general.css">
@@ -23,18 +23,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0" id="navUl">
               <li class="nav-item">
-                <a class="nav-link active bold" aria-current="page" href="#">NoWeebs!</a>
+                <a class="nav-link active bold" aria-current="page" href="#main">NoWeebs!</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About</a>
+              <a class="nav-link" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Donate</a>
+              <a class="nav-link" href="#donate">Donate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             </ul>
             
@@ -45,14 +45,14 @@
     </nav>
 
     <section class="text-center d-block" id="main">
-        <div class="w-100 top-30 position-absolute text-white">
+        <div class="w-100 top-30 position-absolute text-white" id="main">
             <h1>NoWeebs!</h1>
             <p>Twitch weeb emote blocker for better Viewing experience.</p>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle bg-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Please select blocking method ...
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" id="dropdown">
                   <li><button class="dropdown-item" type="button">FrankerFaceZ</button></li>
                   <li><button class="dropdown-item" type="button">BTTV</button></li>
                   <li><button class="dropdown-item" type="button">7tv</button></li>
@@ -82,7 +82,7 @@
     </section>
 
     <footer class="text-center text-lg-start text-white flex end">
-        <div class="text-center text-white text-justify">
+        <div class="text-center text-white text-justify" id="contact">
           <a class="p-2 bd-highlight" target="_blank" href="mailto: admin@noweebs.com" title="Email">
             admin@noweebs.com
              <i class="iconify fgcolor" data-icon="clarity:email-solid"></i>
